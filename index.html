@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="
+  https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Tela de Login/Logout</title>
+</head>
+
+<body>
+  <!-- ==================== FORM BOX ==================== -->
+  <div class="form__box">
+    <!-- -------------------- FORM REGISTER -------------------- -->
+    <form action="" method="post" class="register__container" id="register">
+      <div class="content__left">
+        <img src="./img/animation.svg" alt="">
+      </div>
+
+      <div class="content__right">
+        <div class="content__right__register">
+          <div class="row">
+            <div><i class="ri-user-3-line"></i></div>
+            <span>Registro</span>
+          </div>
+
+          <div class="textfield">
+            <input type="text" class="inputText" name="name" id="name" autocomplete="off" required>
+            <label for="name" class="labelText">Nome e Sobrenome</label>
+          </div>
+
+          <div class="textfield">
+            <input type="email" class="inputText" name="email" id="email" autocomplete="off" required>
+            <label for="email" class="labelText">Email</label>
+          </div>
+
+          <div class="row__datanasc">
+            <label for="datanasc">Data de Nascimento:</label>
+            <input type="date" name="datanasc" id="datanasc" required>
+          </div>
+
+          <div class="textfield">
+            <input type="password" class="inputText" name="senha" id="senha" autocomplete="off" required>
+            <label for="senha" class="labelText">Senha</label>
+          </div>
+
+          <div class="remember">
+            <label for="check">
+              <input type="checkbox" name="check" id="check">
+              Lembre-se de mim
+            </label>
+            <a href="#">Termos e Condições</a>
+          </div>
+
+          <button type="submit" class="btn">Registrar</button>
+
+          <p>Já tem uma conta? <a href="#" onclick="login()">Login</a></p>
+
+        </div>
+      </div>
+    </form>
+
+
+    <!-- -------------------- FORM LOGIN -------------------- -->
+    <form action="" method="post" class="login__container hidden" id="login">
+    
+      <div class="content__left">
+        <div class="content__left__login">
+          <div class="row">
+            <div><i class="ri-user-3-line"></i></div>
+            <span>Login</span>
+          </div>
+    
+          <div class="textfield">
+            <input type="text" class="inputText" name="name" id="name" autocomplete="off" required>
+            <label for="name" class="labelText">Nome e Sobrenome</label>
+          </div>
+    
+          <div class="textfield">
+            <input type="email" class="inputText" name="email" id="email" autocomplete="off" required>
+            <label for="email" class="labelText">Email</label>
+          </div>
+    
+          <div class="textfield">
+            <input type="password" class="inputText" name="senha" id="senha" autocomplete="off" required>
+            <label for="senha" class="labelText">Senha</label>
+          </div>
+    
+          <div class="remember">
+            <label for="check__login">
+              <input type="checkbox" name="check__login" id="check__login">
+              Lembre-se de mim
+            </label>
+            <a href="#">Esqueci a Senha</a>
+          </div>
+    
+          <button type="submit" class="btn">Logar</button>
+    
+          <p>Não tem uma conta? <a href="#" onclick="register()">Cadastrar</a></p>
+    
+        </div>
+      </div>
+
+      <div class="content__right">
+        <img src="./img/animation.svg" alt="">
+      </div>
+    </form>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
